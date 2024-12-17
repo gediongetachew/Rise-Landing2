@@ -46,8 +46,9 @@ export default function CurvedCard() {
                 textAlign: "left", // Align text to the left
                 display: "inline-block",
                 textWrap: "wrap",
-
-                fontSize: { xs: 28, sm: 35, md: 40, lg: 50, xl: 50 },
+                fontFamily:'Roboto',
+                fontWeight:500,
+                fontSize: { xs: '30px', sm: 35, md: 40, lg: 50, xl: '48px' },
               }}
             >
               Bringing Innovation to Healthcare Your Trusted Partner in Medical
@@ -67,14 +68,14 @@ export default function CurvedCard() {
                   lg: "108%",
                   xl: "88%",
                 },
-                left: { xs: 160, sm: 0, md: 0, lg: 0, xl: 265 }, // Ensures the box starts from the left
+                left: { xs: 160, sm: 0, md: 0, lg: 0, xl: 240 }, // Ensures the box starts from the left
                 background: "black",
                 width: {
                   xs: "35%",
                   sm: "40%",
                   md: "50%",
                   lg: "50%",
-                  xl: "30%",
+                  xl: "35%",
                 },
                 height: "2px",
                 transform: "translateY(-50%)",
@@ -98,7 +99,7 @@ export default function CurvedCard() {
                   sm: "41%",
                   md: "50%",
                   lg: "52%",
-                  xl: "62%",
+                  xl: "68%",
                 },
                 height: "40px",
                 transform: "translateY(-50%)",
@@ -109,15 +110,23 @@ export default function CurvedCard() {
           <Grid
             item
             xs={12}
-            sx={{ marginTop: { xs: 2, sm: 5, md: 8,lg:6 }, justifyItems: "left" }}
+            sx={{ marginTop: { xs: 2, sm: 5, md: 8,lg:2 }, fontFamily:'Roboto',justifyItems: "left" }}
           >
             <Typography
               variant="subtitle1"
-              sx={{ color: "#616161", textAlign: "left" }}
+              sx={{
+                color: "#616161",
+                textAlign: { xs: "center", md: "left" },
+                fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                fontWeight: 300,
+                letterSpacing: { xs: 0.5, md: 1 },
+                marginTop: { xs: 1, sm: 2, md: 3 },
+                marginBottom: { xs: 2, sm: 3, md: 4 },
+                position: "relative",
+               
+              }}
             >
-              Lorem ipsum dolor sit amet consectetur. Mauris semper tristique
-              elit tincidunt. <br /> Odio suspendisse hendrerit quis vel
-              fermentum. Sit.
+              Made In Germany
             </Typography>
           </Grid>
           <Grid
@@ -142,7 +151,10 @@ export default function CurvedCard() {
                 paddingX: { xs: 5, md: 4, lg: 6, xl: 6 },
                 paddingY: { xs: 2, sm: 1, md: 2, lg: 2, xl: 2 },
                 borderRadius: "40px",
-                fontSize: { xs: 12, md: 18, lg:20},
+                fontSize: { xs: '14px', md: '20px', lg:'24px'},
+                fontWeight:500,
+                
+                fontFamily:'Roboto'
               }}
             >
               Discover
@@ -159,7 +171,9 @@ export default function CurvedCard() {
                 border: "0.5px solid #9E9E9E",
                 paddingX: { xs: 3, sm: 3, md: 3, lg: 3, xl: 3 },
                 paddingY: { xs: 0, sm: 2, md: 1 },
-                fontSize: { xs: 12, md: 18,lg:20 },
+                fontSize: { xs: '14px', md: '20px',lg:'24px' },
+                fontFamily:"Roboto",
+                fontWeight:400
               }}
             >
               Get In Touch
@@ -189,8 +203,8 @@ export default function CurvedCard() {
                   src="/assets/hero.svg"
                   alt="hero-image"
                   width={730}
-                  height={400}
-                  style={{ width: "100%", height: "auto" }}
+                  height={350}
+                  style={{ width: "100%", height: "80%" }}
                 />
                 <Card
                   sx={{
@@ -257,8 +271,10 @@ export default function CurvedCard() {
               variant="subtitle2"
               sx={{
                 color: "#9E9E9E",
-                fontSize: { xs: 12, md: 16 },
+                fontSize: { xs: '14px', md: '24px' },
                 marginTop: { xs: 3, sx: 2, md: 5, lg: 25 },
+                fontFamily:'Roboto',
+                fontWeight:400
               }}
             >
               Medical Equipment / Automobile / Cafe / <br />
@@ -312,13 +328,15 @@ export default function CurvedCard() {
               variant="h1"
               sx={{
                 fontSize: {
-                  xs: ".9rem",
-                  sm: "1rem",
-                  md: "1.7rem",
-                  lg: "2rem",
-                  xl: "2.5rem",
+                  xs: "20px",
+                  sm: "25px",
+                  md: "30px",
+                  lg: "36px",
+                  xl: "40px",
                 },
-                marginBottom: { xs: 1 },
+                marginBottom: { xs:0 },
+                fontWeight:700,
+                fontFamily:'Helvetica'
               }}
             >
               235
@@ -327,13 +345,15 @@ export default function CurvedCard() {
               variant="h2"
               sx={{
                 fontSize: {
-                  xs: ".6rem",
-                  sm: ".8rem",
-                  md: "1rem",
-                  lg: "1.4rem",
-                  xl: "1.8rem",
+                  xs: "10px",
+                  sm: "14px",
+                  md: "18px",
+                  lg: "20px",
+                  xl: "24px",
                 },
-                marginBottom: { xs: 1 },
+                marginBottom: { xs: 3 },
+                fontWeight:700,
+                fontFamily:'Helvetica'
               }}
             >
               Loyal Customer
@@ -342,12 +362,14 @@ export default function CurvedCard() {
               variant="body2"
               sx={{
                 fontSize: {
-                  xs: "0.5rem",
-                  sm: "0.6rem",
-                  md: "0.6rem",
-                  lg: ".9rem",
-                  xl: "1.1rem",
+                  xs: "5px",
+                  sm: "8px",
+                  md: "10px",
+                  lg: "12px",
+                  xl: "18px",
                 },
+                 fontWeight:400,
+                fontFamily:'Roboto' 
               }}
             >
               Lorem Ipsum Dolor Sit Amet Conse Ctetur. Posuere Pellentesque

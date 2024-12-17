@@ -1,6 +1,10 @@
 import { StaticImageData } from "next/image";
-import brand from "../../public/assets/mastercard.png";
-
+import contec from "../../public/assets/contec.png";
+import fia from "../../public/assets/fia.png";
+import meiril from "../../public/assets/meiril.png";
+import nebula from "../../public/assets/nebula.png";
+import radiant from "../../public/assets/radiant.png";
+import smi from "../../public/assets/smi.png";
 interface brandCards {
   id: number;
   title: string;
@@ -10,40 +14,46 @@ interface brandCards {
 }
 
 const cards: brandCards[] = [
-  { id: 1, title: "brand1", img: brand, url: "/brand", alt: "bran-img" },
+  {
+    id: 1,
+    title: "brand1",
+    img: contec,
+    url: "/contec.png",
+    alt: "bran-img",
+  },
   {
     id: 2,
     title: "brand1",
-    img: brand,
-    url: "/brand",
+    img: fia,
+    url: "/fia.png",
     alt: "bran-img",
   },
   {
     id: 3,
     title: "brand1",
-    img: brand,
-    url: "/brand",
+    img: meiril,
+    url: "/meiril.png",
     alt: "bran-img",
   },
   {
     id: 4,
     title: "brand1",
-    img: brand,
-    url: "/brand",
+    img: nebula,
+    url: "/nebula.png",
     alt: "bran-img",
   },
   {
     id: 5,
     title: "brand1",
-    img: brand,
-    url: "/brand",
+    img: radiant,
+    url: "/radiant.png",
     alt: "bran-img",
   },
   {
     id: 6,
     title: "brand1",
-    img: brand,
-    url: "/brand",
+    img: smi,
+    url: "/smi.png",
     alt: "bran-img",
   },
 ];

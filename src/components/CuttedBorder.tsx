@@ -28,8 +28,8 @@ const FolderCard = (props: Props) => {
         }
       }}
       sx={{
-        width: { xs: "350px", sm: "600px",md: "350px", lg: expand ? "720px" : "300px" } ,// Expand width horizontally
-        height: { xs: "250px", sm: "350px", md: "340px" }, // Keep the height fixed
+        width: { xs: "350px", sm: "600px",md: "350px", lg: expand ? "650px" : "348px" } ,// Expand width horizontally
+        height: { xs: "310px", sm: "385px", md: "420px" }, // Keep the height fixed
         backgroundColor: "white",
         borderRadius: "20px",
         borderLeft: "3px solid rgba(0,0,0,0.1)",
@@ -81,7 +81,7 @@ const FolderCard = (props: Props) => {
           top: "49px", // Position it right below the cutout
           right: 0,
           width: "62px", // Match the width of the cutout
-          height: "280px", // Adjust the height as desired
+          height: "360px", // Adjust the height as desired
           borderTop: "1px solid rgba(0,0,0,0.1)", // Top border
           borderRight: "3px solid rgba(0,0,0,0.1)", // Right border
           backgroundColor: "white",
@@ -147,7 +147,7 @@ const FolderCard = (props: Props) => {
                 display: "flex",
                 width: "100%",
                 height: "20%",
-                marginTop: { xs: 4, md: 8 },
+                marginTop: { xs: 2, md: 4 },
 
                 gap: { xs: 2, md: 10 },
               }}
@@ -201,7 +201,7 @@ const FolderCard = (props: Props) => {
             color="textPrimary"
             fontFamily={"Helvetica Light"}
             sx={{
-              marginTop: expand ? 4 : 17,
+              marginTop: expand ? 4: 17,
               fontWeight: "bold",
               fontSize: { xs: 15, sm: 25, md: 20 },
             }}

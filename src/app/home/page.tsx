@@ -1,7 +1,8 @@
+'use client'
 import Hero from "../../sections/landing/Hero";
 import Aboutus from "../../sections/landing/About";
 import Banner from "../../components/Banner";
-import Products from "../../sections/landing/Products";
+import Sectors from "../../sections/landing/sectors";
 import TestimonialCard from "../../sections/landing/Testimonials";
 import ImageCarousel from "@/components/Carousel";
 import Grid from "@mui/material/Grid";
@@ -12,7 +13,7 @@ export default function Home() {
       <ImageCarousel name="Our Brands" direction="forward" bgcolor={true} />
       <Aboutus />
       <Banner />
-      <Products />
+      <Sectors/>
       <TestimonialCard />
       <Grid
         sx={{

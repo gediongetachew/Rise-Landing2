@@ -3,16 +3,8 @@ import { ArrowOutward } from "@mui/icons-material";
 import { Box, Button, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import React from "react";
-import aboutUsCardContent from "@/data/aboutUsCardContent";
-import CuttedBorder from "../../components/CuttedBorder";
-import { useState } from "react";
 
 export default function About() {
-  const [selectedCard, setSelectedcard] = useState<number | null>(1);
-  const handleSelect = (id: number) => {
-    setSelectedcard((prev) => (prev === id ? null : id));
-  };
-
   return (
     <Grid
       container
@@ -27,7 +19,9 @@ export default function About() {
           variant="h5"
           sx={{
             color: "#EE484A",
-            fontSize: { xs: 15, sm: 20, md: 25, lg: 25 },
+            fontSize: { xs: "20px", sm: "25px", md: "32px" },
+            fontFamily: "Helvetica",
+            fontWeight: 400,
           }}
         >
           About Us
@@ -42,15 +36,14 @@ export default function About() {
           variant="h3"
           sx={{
             color: "#3D628C",
-            fontSize: { xs: 20, sm: 20, md: 30, lg:35, xl:50 },
+            fontSize: { xs: 20, sm: 20, md: 30, lg: 35, xl: 50 },
+            fontWeight: 700,
             fontFamily: "Helvetica",
             marginTop: 3,
-            width: "80%",
+            width: "100%",
           }}
         >
-          Lorem ipsum dolor sit amet consec <br /> tetur Attempor eu fermentu
-          Commodo
-          <br />
+          Lorem ipsum dolor sit amet consec tetur Attempor eu fermentu Commodo
           it amet consec tetur
         </Typography>
 
@@ -67,10 +60,11 @@ export default function About() {
             sx={{
               color: "#616161",
               fontFamily: "Roboto",
-              fontSize: { xs: 15, sm: 20, md: 25, lg: 20 },
+              fontSize: { xs: 15, sm: 20, md: 25, lg: 25 },
+              fontWeight: 300,
               textAlign: "left", // Align text to the right
               marginTop: 2,
-              width: "100%", // Ensures it takes full width for alignment
+              width: "80%", // Ensures it takes full width for alignment
             }}
           >
             Lorem ipsum dolor sit amet consectetur. Rhoncus gravida consequat
@@ -82,6 +76,9 @@ export default function About() {
             endIcon={<ArrowOutward />}
             sx={{
               boxShadow: "none",
+              fontFamily: "Roboto",
+              fontWeight: 400,
+              fontSize: { xs: "15px", md: "20px" },
               color: "black",
               background: "white",
               width: 170,
@@ -95,47 +92,6 @@ export default function About() {
           </Button>
         </Box>
       </Grid>
-      <Grid
-  container
-  sx={{
-    display: "flex",
-    flexWrap: "wrap",
-    marginTop: 4,
-    gap: { xs: 2, sm: 2,md:6,lg:5 }, // Adds space between cards, adjust as needed
-    justifyContent: { xs: "center", sm: "center", md: "center" }, // Center for small screens, space-between for larger
-    alignItems: "center", // Align items vertically at the center
-    
-    marginX: {xs:0, md:0}, // Ensures the grid is centered
-  }}
->
-  {aboutUsCardContent.map((item) => (
-    <Grid
-      item
-      key={item.id}
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center", // Center-align items horizontally
-        justifyItems: "center",
-        width: { xs: "90%", sm: "90%", md: "30%" }, // Adjust width for different screen sizes
-        marginBottom: 3,
-     
-      
-      }}
-    >
-      <CuttedBorder
-        selected={selectedCard}
-        handleSelect={handleSelect}
-        title={item.title}
-        text={item.text}
-        img={item.img}
-        icon={item.icon}
-        id={item.id}
-      />
-    </Grid>
-  ))}
-</Grid>
-
     </Grid>
   );
 }

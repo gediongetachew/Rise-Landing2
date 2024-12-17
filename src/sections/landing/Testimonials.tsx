@@ -197,35 +197,24 @@ export default function TestimonialCard() {
                     >
                       <Box
                         sx={{
-                          width: { xs: "40px", sm: "50px", md: "60px" },
-                          height: { xs: "30px", sm: "50px", md: "60px" },
-                          position: "relative",
+                          position: 'relative',
+                          width: { xs: 40, sm: 50, md: 60 },
+                          height: { xs: 40, sm: 50, md: 60 },
+                          borderRadius: '50%',
+                          overflow: 'hidden', // This ensures the image respects the border radius
+                          border: '2px solid #f0f0f0',
+                          boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
                         }}
                       >
                         <Image
                           src={testimonial.icon}
-                          alt="tropy-img"
+                          alt="trophy-img"
                           layout="fill"
                           objectFit="contain"
+                          style={{ 
+                            borderRadius: '50%',
+                          }}
                         />
-                        <Box sx={{ marginLeft: { xs: 7, md: 10 } }}>
-                          <Typography
-                            variant="h6"
-                            fontWeight="bold"
-                            sx={{ fontSize: { xs: 10, sm: 20, md: 20 } }}
-                          >
-                            {testimonial.title}
-                          </Typography>
-                          <Typography
-                            variant="subtitle2"
-                            sx={{
-                              color: "#475467",
-                              fontSize: { xs: 6, sm: 15, md: 20 },
-                            }}
-                          >
-                            {testimonial.discription}
-                          </Typography>
-                        </Box>
                       </Box>
 
                       <Box

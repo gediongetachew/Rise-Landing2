@@ -28,10 +28,12 @@ export default function ImageCarousel({ name, direction, bgcolor }: Props) {
             sx={{
               color: "#EE484A",
               paddingX: { xs: 2, sm: 4, md: 10 },
-              fontSize: { xs: "1.25rem", sm: "1.5rem", md: "1.5rem" },
+              fontSize: { xs: "20px", sm: "25px", md: "32px" },
               backgroundColor: bgcolor ? "#F7F7F7" : "white",
               paddingLeft: 4,
-              paddingTop:3
+              paddingTop:3,
+              fontFamily:'Helvetica',
+              fontWeight:400
              
             }}
           >
@@ -81,13 +83,13 @@ export default function ImageCarousel({ name, direction, bgcolor }: Props) {
                         xs: "70px",
                         sm: "120px",
                         md: "150px",
-                        lg: "110px",
+                        lg: "130px",
                       },
                       height: {
                         xs: "70px",
                         sm: "140px",
                         md: "120px",
-                        lg: "160px",
+                        lg: "180px",
                       },
                       position: "relative",
                       overflow: "hidden",
