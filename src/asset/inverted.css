@@ -248,7 +248,7 @@ ul {
               justify-content: center;
               transition: 0.2s ease-in-out;
   
-              &:hover {
+              &:hover { 
                 background: var(--clr-black);
                 border: 0.125rem solid var(--clr-black);
                 color: var(--clr-white);
@@ -275,7 +275,7 @@ ul {
             align-items: center;
             background: var(--clr-white);
             padding: 0.625rem 1.5rem;
-            border-top-right-radius: 1rem;
+            border-top-left-radius: 1rem;
   
             &::before {
               position: absolute;

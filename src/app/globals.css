@@ -5,6 +5,12 @@
 @tailwind utilities;
 
 /* globals.css */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --clr-white: #fff;
+  --clr-black: #111;
+}
 
 .perspective-1000 {
   perspective: 1000px;
@@ -60,4 +66,23 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+.videoBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.videoBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.poster-active iframe {
+  opacity: 1;
 }
