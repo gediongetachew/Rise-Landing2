@@ -28,7 +28,7 @@ const FolderCard = (props: Props) => {
         }
       }}
       sx={{
-        width: { xs: "350px", sm: "600px",md: "350px", lg: expand ? "650px" : "348px" } ,// Expand width horizontally
+        width: { xs: "350px", sm: "600px",md: expand ? "620px" : "280px" , lg: expand ? "600px" : "300px",xl: expand ? "750px" : "348px" } ,// Expand width horizontally
         height: { xs: "310px", sm: "385px", md: "420px" }, // Keep the height fixed
         backgroundColor: "white",
         borderRadius: "20px",
@@ -36,7 +36,7 @@ const FolderCard = (props: Props) => {
         borderBottom: "3px solid rgba(0,0,0,0.1)",
         position: "relative",
         overflow: "hidden",
-        m: 4,
+        
         padding: 2,
         transition: "width 0.3s ease",
         elevation: 4, // Smooth transition for width change
@@ -201,7 +201,7 @@ const FolderCard = (props: Props) => {
             color="textPrimary"
             fontFamily={"Helvetica Light"}
             sx={{
-              marginTop: expand ? 4: 17,
+              marginTop: {xs:expand ? 4: 10, md:expand ? 4: 10, lg:expand ? 4: 12, xl:expand ? 4: 17},
               fontWeight: "bold",
               fontSize: { xs: 15, sm: 25, md: 20 },
             }}

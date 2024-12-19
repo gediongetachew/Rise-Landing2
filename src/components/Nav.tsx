@@ -19,7 +19,6 @@ const navItems = [
   { title: "Home", address: "/home" },
   { title: "About", address: "/about" },
   { title: "Product", address: "/product" },
-  { title: "News", address: "/news" },
   { title: "Contact", address: "/contact" },
 ];
 
