@@ -67,7 +67,7 @@ export default function TestimonialCard() {
         </Typography>
       </Grid>
 
-      <Grid item xs={12} sx={{ marginTop: { xs: 10, sx: 0, md: 10 } }}>
+      <Grid item xs={12} sx={{ marginTop: { xs: 10, sx: 0, md: 10 } , paddingX:{xs:1, sm:0}}}>
         <Grid
           container
           spacing={2}
@@ -90,9 +90,9 @@ export default function TestimonialCard() {
               item
               xs={12}
               sm={12}
-              md={12}
-              lg={5.8}
-              xl={5.8}
+              lg={5.6}
+              
+              xl={5.7}
               key={index}
               sx={{
                 height: { xs: "260px", sm: "360px", md: "360px" },
@@ -215,7 +215,7 @@ export default function TestimonialCard() {
                       whiteSpace: "wrap",
                       overflow: "hidden",
                       textOverflow: "ellipsis",
-                      fontSize: { xs: 10, sm: 15, md: 20 },
+                      fontSize: { xs: 12, sm: 20, md: 18, xl:20 },
                       fontFamily: "Helvetica Light",
                     }}
                   >

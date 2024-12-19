@@ -64,7 +64,7 @@ export default function About() {
               fontWeight: 300,
               textAlign: "left", // Align text to the right
               marginTop: 2,
-              width: "80%", // Ensures it takes full width for alignment
+              width: {xs:"100%", md:"80%"}, // Ensures it takes full width for alignment
             }}
           >
             Lorem ipsum dolor sit amet consectetur. Rhoncus gravida consequat

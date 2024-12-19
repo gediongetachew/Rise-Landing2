@@ -38,7 +38,7 @@ export default function Sectors() {
             fontWeight: 700,
             fontFamily: "Helvetica",
             marginTop: 3,
-            width: "50%",
+            width: {xs:"100%",md:"50%"},
           }}
         >
           Streamlining our sectors to focus on impactful solutions and

@@ -11,9 +11,11 @@ export default function Banner() {
       justifyContent="center"
       sx={{
         position: "relative",
+        display:"flex",
+        flexDirection: "column",
         my: 10,
         width: "100%",
-        height: { xs: "30vh", sm: "35vh", md: "50vh" },
+        height: { xs: "30vh", sm: "35vh", md: "80vh" },
         backgroundImage: `url('/assets/banner.png')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -27,21 +29,27 @@ export default function Banner() {
         sm={6}
         md={6}
         lg={6}
-        xl={6}
+        xl={12}
         sx={{
           position: "absolute",
-          bottom: { xs: "5%", sm: "0%", md: "5%" },
+          display:"flex",
+          justifyContent:"space-between",
+          bottom: { xs: "5%", sm: "0%", md: "12%" },
           left: { xs: "2%", sm: "0%", md: "0%" },
           zIndex: 10,
           paddingX: { xs: 2, sm: 4, md: 10 },
         }}
       >
         <Box
-          display={"flex "}
+       
           sx={{
+            display:"flex",
+            justifyContent:"space-between",
             padding: { xs: 0, sm: 3, md: 4 },
             borderRadius: 2,
             gap: { xs: 2, sm: 10, xl: 8 },
+          
+            width:"100%"
           }}
         >
           <Box
@@ -58,7 +66,7 @@ export default function Banner() {
               gutterBottom
               sx={{
                 fontSize: {
-                  xs: "1.5rem",
+                  xs: "1rem",
                   sm: "1.5rem",
                   md: "2.5rem",
                   lg: "2.8rem",
@@ -68,14 +76,14 @@ export default function Banner() {
                 fontWeight: 'bold'
               }}
             >
-              +71%
+              +10
             </Typography>
             <Typography
               variant="h6"
               color="white"
               sx={{
                 fontSize: {
-                  xs: ".6rem",
+                  xs: ".8rem",
                   sm: ".8rem",
                   md: "1.2rem",
                   lg: "1.3rem",
@@ -83,7 +91,7 @@ export default function Banner() {
                 },
               }}
             >
-              Top 5 Medical Equipment Imports
+            Employees
             </Typography>
           </Box>
           <Box display={"flex flex-col"}>
@@ -103,7 +111,7 @@ export default function Banner() {
                 fontWeight: 'bold'
               }}
             >
-              +1.5K
+              +20
             </Typography>
             <Typography
               variant="h6"
@@ -118,9 +126,80 @@ export default function Banner() {
                 },
               }}
             >
-              Happy Customer
+             Products
             </Typography>
           </Box>
+          <Box display={"flex flex-col"}>
+            <Typography
+              variant="h6"
+              component="h1"
+              color="white"
+              gutterBottom
+              sx={{
+                fontSize: {
+                  xs: "1rem",
+                  sm: "1.5rem",
+                  md: "2.5rem",
+                  lg: "2.8rem",
+                  xl: "3.5rem",
+                },
+                fontWeight: 'bold'
+              }}
+            >
+              +30
+            </Typography>
+            <Typography
+              variant="h6"
+              color="white"
+              sx={{
+                fontSize: {
+                  xs: ".8rem",
+                  sm: ".8rem",
+                  md: "1.2rem",
+                  lg: "1.3rem",
+                  xl: "1.8rem",
+                },
+              }}
+            >
+             Loyal Customers
+            </Typography>
+          </Box>
+          <Box display={"flex flex-col"}>
+            <Typography
+              variant="h6"
+              component="h1"
+              color="white"
+              gutterBottom
+              sx={{
+                fontSize: {
+                  xs: "1rem",
+                  sm: "1.5rem",
+                  md: "2.5rem",
+                  lg: "2.8rem",
+                  xl: "3.5rem",
+                },
+                fontWeight: 'bold'
+              }}
+            >
+              +10
+            </Typography>
+            <Typography
+              variant="h6"
+              color="white"
+              sx={{
+                fontSize: {
+                  xs: ".8rem",
+                  sm: ".8rem",
+                  md: "1.2rem",
+                  lg: "1.3rem",
+                  xl: "1.8rem",
+                },
+              }}
+            >
+             Years Of Experience
+            </Typography>
+          </Box>
+          
         </Box>
       </Grid>
 
