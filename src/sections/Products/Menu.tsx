@@ -148,7 +148,7 @@ export default function Menu() {
             display: "flex",
             flexWrap: "nowrap",
             gap: 10,
-            paddingLeft: 20,
+            paddingLeft: 18,
             marginRight: 0,
             scrollbarWidth: "none",
             scrollSnapType: "x mandatory", // Enable snap behavior
@@ -159,12 +159,12 @@ export default function Menu() {
             <Box
               key={product.id}
               sx={{
-                minWidth: { xs: "350px", sm: "550px", md: "650px", lg: "750px" },
+                minWidth: { xs: "350px", sm: "550px", md: "650px", lg: "800px" },
                 width: "50%",
                 scrollSnapAlign: "center", // Snap each item
               }}
             >
-              <InvertedBorder height={450} image={product.img} />
+              <InvertedBorder height={420} image={product.img} />
             </Box>
           ))}
         </Box>
