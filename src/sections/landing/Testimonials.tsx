@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Box, Typography, Grid, Button } from "@mui/material";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 import testimonials from "@/data/testimonial";
@@ -9,22 +9,27 @@ import quoteImg from "../../../public/assets/quotation.png";
 export default function TestimonialCard() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [page, setPage] = useState(1);
+  const [windowWidth, setWindowWidth] = useState(typeof window !== "undefined" ? window.innerWidth : 0);
 
-  const nextTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 2) % testimonials.length);
-    if (page === testimonials.length) {
-      setPage(1);
-    } else setPage(page + 1);
-  };
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
-  const prevTestimonial = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 2 + testimonials.length) % testimonials.length
-    );
-    if (page === 1) {
-      setPage(1);
-    } else setPage(page - 1);
+  const updatePageAndIndex = (direction: string) => {
+    const step = windowWidth > 1197 ? 2 : 1;
+    if (direction === "next") {
+      setCurrentIndex((prevIndex) => (prevIndex + step) % testimonials.length);
+      setPage((prevPage) => (prevPage + step > testimonials.length ? 1 : prevPage + step));
+    } else if (direction === "prev") {
+      setCurrentIndex((prevIndex) => (prevIndex - step + testimonials.length) % testimonials.length);
+      setPage((prevPage) => (prevPage - step < 1 ? testimonials.length : prevPage - step));
+    }
   };
+  
+  const nextTestimonial = () => updatePageAndIndex("next");
+  const prevTestimonial = () => updatePageAndIndex("prev");
 
   return (
     <Grid
@@ -80,6 +85,7 @@ export default function TestimonialCard() {
               key={index}
               sx={{
                 height: "auto",
+                minHeight: "400px",
                 width: { xs: "100%", sm: "360px", md: "360px" },
                 flexShrink: 0,
                 backgroundColor: "white",
@@ -312,13 +318,4 @@ export default function TestimonialCard() {
     </Grid>
   );
 }
-
-
-
-
-
-
-
-
-
 

@@ -24,7 +24,7 @@ export default function Sectors() {
             fontSize: { xs: "20px", md: "32px" },
             color: "#EE484A",
             fontFamily: "Helvetica",
-            fontWeight: 700,
+            fontWeight: 400,
           }}
         >
           Our Sectors

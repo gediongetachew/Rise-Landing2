@@ -127,7 +127,7 @@ export default function GetInTouch() {
       </Grid>
 
       {/* Contact Information and Form */}
-      <Grid container spacing={5} padding={{ xs: 2, md: 5 }}>
+      <Grid container spacing={8} padding={{ xs: 2, md: 5 }}>
         {/* Contact Info Section */}
         <Grid
           item
