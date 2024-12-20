@@ -52,7 +52,7 @@ export default function Quality() {
             <Typography variant="h6" fontWeight="bold" fontFamily={'Helvetica'} sx={{fontSize: {xs:15,sm: 20,md:20}}}>
               High Quality
             </Typography>
-            <Typography variant="body2" fontFamily={'Roboto'}>Top Products & Materials</Typography>
+            <Typography variant="body2" fontFamily={'Roboto'} color="#616161">Top Products & Materials</Typography>
           </Box>
         </Grid>
 
@@ -82,7 +82,7 @@ export default function Quality() {
             <Typography variant="h6" fontWeight="bold" fontFamily={'Helvetica'} sx={{fontSize: {xs:15,sm: 20,md:20}}}>
               Verified
             </Typography>
-            <Typography variant="body2" fontFamily={'Roboto'}>Top Products & Materials</Typography>
+            <Typography variant="body2" fontFamily={'Roboto'} color="#616161">Top Products & Materials</Typography>
           </Box>
         </Grid>
 
@@ -114,9 +114,9 @@ export default function Quality() {
             }}
           >
             <Typography variant="h6" fontWeight="bold" fontFamily={'Helvetica'} sx={{fontSize: {xs:15,sm: 20,md:20}}}>
-              Warranty
+              Warranty Protection
             </Typography>
-            <Typography variant="body2" fontFamily={'Roboto'}>Top Products & Materials</Typography>
+            <Typography variant="body2" fontFamily={'Roboto'} color="#616161">Over 2 Years</Typography>
           </Box>
         </Grid>
 
@@ -144,9 +144,9 @@ export default function Quality() {
             }}
           >
             <Typography variant="h6" fontWeight="bold" fontFamily={'Helvetica'} sx={{fontSize: {xs:15,sm: 20,md:20}}}>
-              Support
+              24/7 Support
             </Typography>
-            <Typography variant="body2" fontFamily={'Roboto'}>Top Products & Materials</Typography>
+            <Typography variant="body2" fontFamily={'Roboto'} color="#616161">Dedicated Support</Typography>
           </Box>
         </Grid>
       </Grid>

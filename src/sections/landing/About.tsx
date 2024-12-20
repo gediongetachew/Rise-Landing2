@@ -36,15 +36,15 @@ export default function About() {
           variant="h3"
           sx={{
             color: "#3D628C",
-            fontSize: { xs: 20, sm: 20, md: 30, lg: 35, xl: 50 },
+            fontSize: { xs: "15px", sm: "20px", md: "25px", lg: "40px", xl: "48px" },
             fontWeight: 700,
             fontFamily: "Helvetica",
             marginTop: 3,
             width: "100%",
           }}
         >
-          Lorem ipsum dolor sit amet consec tetur Attempor eu fermentu Commodo
-          it amet consec tetur
+          We specialise in importing medical products to Africa and exporting
+          organic treasures like coffee and spices globally.
         </Typography>
 
         <Box
@@ -64,12 +64,12 @@ export default function About() {
               fontWeight: 300,
               textAlign: "left", // Align text to the right
               marginTop: 2,
-              width: {xs:"100%", md:"80%"}, // Ensures it takes full width for alignment
+              width: { xs: "100%", md: "80%" }, // Ensures it takes full width for alignment
             }}
           >
-            Lorem ipsum dolor sit amet consectetur. Rhoncus gravida consequat
-            feugiat consectetur. Adipiscing arcu sit auctor hac ornare tempus.
-            Quis praesent.
+            We are a team of young professionals with five years of experience
+            successfully importing medical products from Europe (Germany and
+            Belgium), China, and India to Africa.
           </Typography>
           <Button
             variant="contained"

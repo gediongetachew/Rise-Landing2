@@ -42,8 +42,7 @@ export default function Values() {
                 },
               }}
             >
-              Lorem ipsum dolor sit amet consectetur Adipiscing elit, sed do
-              eiusmod tempor
+             We provide reliable solutions, build strong partnerships, and create a positive impact.
             </Typography>
           </Grid>
 

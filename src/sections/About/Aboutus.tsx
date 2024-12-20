@@ -41,11 +41,12 @@ export default function TestimonialCard() {
             color: "#3D628C",
             fontWeight: { xs: "bold", sm: "bold" },
             width: { xs: "99%" },
-            fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem", lg: "3.5rem" },
+            fontSize: { xs: "1rem", sm: "1.5rem", md: "2rem", lg: "48px" },
             fontFamily: "Helvetica",
           }}
         >
-          Lorem ipsum dolor sit amet consectetur. Non donec erat fermentum donec
+          We specialise in importing medical products to Africa and exporting
+          organic treasures like coffee and spices globally.
         </Typography>
 
         <Typography
@@ -58,16 +59,22 @@ export default function TestimonialCard() {
             fontFamily: "Roboto",
           }}
         >
-          Lorem ipsum dolor sit amet consectetur. Sit arcu elit enim lorem at
-          venenatis ipsum. Dolor nunc ultrices in accumsan massa mattis urna
-          volutpat ac. Dui nisl consequat id aliquam. Accumsan enim sed
-          fermentum neque. Feugiat montes amet dapibus in mauris eget
-          scelerisque tincidunt. Rutrum et odio mi vestibulum eros euismod
-          morbi. Risus lobortis non tellus mi massa. Arcu pulvinar convallis.
+          We are a group of young and energetic professionals experienced the
+          last five years on Import and Export medical products from
+          Europe(mainly from Germany and Belgium), China, and India to the Broad
+          demanding African market successfully and Africa´s Organic tastes such
+          us Coffee, fruits, spice and herbs to the global market.
         </Typography>
       </Grid>
 
-      <Grid item xs={12} sx={{ marginTop: { xs: 10, sx: 0, md: 10 } , paddingX:{xs:1, sm:0}}}>
+      <Grid
+        item
+        xs={12}
+        sx={{
+          marginTop: { xs: 10, sx: 0, md: 10 },
+          paddingX: { xs: 1, sm: 0 },
+        }}
+      >
         <Grid
           container
           spacing={2}
@@ -91,7 +98,6 @@ export default function TestimonialCard() {
               xs={12}
               sm={12}
               lg={5.6}
-              
               xl={5.7}
               key={index}
               sx={{
@@ -215,7 +221,7 @@ export default function TestimonialCard() {
                       whiteSpace: "wrap",
                       overflow: "hidden",
                       textOverflow: "ellipsis",
-                      fontSize: { xs: 12, sm: 20, md: 18, xl:20 },
+                      fontSize: { xs: 12, sm: 20, md: 18, xl: 20 },
                       fontFamily: "Helvetica Light",
                     }}
                   >

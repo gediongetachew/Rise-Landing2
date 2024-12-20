@@ -81,10 +81,7 @@ export default function Hero() {
               textAlign: "center",
             }}
           >
-            Lorem ipsum dolor sit amet consectetur. Amet donec etiam neque sed.
-            Convallis non commodo pulvinar diam elit urna ac morbi aenean. Odio
-            nec vulputate mauris congue. Potenti risus amet feugiat nunc posuere
-            eget.
+           We deliver high-quality products with a commitment to excellence, ensuring they meet the highest standards and exceed customer expectations.
           </Typography>
         </Grid>
 

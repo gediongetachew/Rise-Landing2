@@ -5,13 +5,13 @@ const aboutMisson = [
   {
     id: 1,
     title: "Our Vision",
-    text: "Lorem ipsum dolor sit amet consectetur. Egestas blandit pellentesque fermentum quis eget vehicula eleifend eleifend orci. Faucibus sed elem entum suspendisse felis lacus. In lectus vitae enim pulvinar sed vulputate. Ornare sit ridiculus sed massa et ut. Eleifend sit tempor facilisisit mi dictumst.",
+    text: "Becoming a reliable and leading Company in the field of Export, Import and Distribution of Medical products, Automobiles, coffee, Fruits, Spices and Herbs.",
     icon: visonIcon,
   },
   {
     id: 1,
     title: "Our Vision",
-    text: "Lorem ipsum dolor sit amet consectetur. Egestas blandit pellentesque fermentum quis eget vehicula eleifend eleifend orci. Faucibus sed elem entum suspendisse felis lacus. In lectus vitae enim pulvinar sed vulputate. Ornare sit ridiculus sed massa et ut. Eleifend sit tempor facilisisit mi dictumst.",
+    text: "Our mission is to be a trusted leader in the export, import, and distribution of medical products, automobiles, and organic goods, driving excellence and sustainable growth globally.",
     icon: missionIcon,
   },
 ];

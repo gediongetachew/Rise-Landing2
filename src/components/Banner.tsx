@@ -217,7 +217,7 @@ export default function Banner() {
         xs={7}
         sm={8}
         md={6}
-        lg={4}
+        lg={5}
       >
         <Box
           display={"flex"}
@@ -235,7 +235,7 @@ export default function Banner() {
             alignItems="flex-center"
             justifyItems="flex-center"
             sx={{
-              fontSize: { xs: ".8rem", sm: "1rem", md: "1.4rem", lg: "1.7rem" },
+              fontSize: { xs: ".8rem", sm: "1rem", md: "1.4rem", lg: "30px" }, fontWeight:400, fontFamily:"Helvatic Light"
             }}
           >
             Happy Customer
@@ -246,9 +246,9 @@ export default function Banner() {
             component="h2"
             color="white"
             gutterBottom
-            sx={{ fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.5rem", xl: '2.5rem', fontWeight: 'bold' } }}
+            sx={{ fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.5rem", xl: '40px', fontWeight: 'bold' }, fontfamily:"Helvatic" }}
           >
-            Lorem ipsum dolor sit amet consectetur. Mauris mollis.
+            Over 10 years of expertise, delivering quality to our global customers.
           </Typography>
         </Box>
       </Grid>

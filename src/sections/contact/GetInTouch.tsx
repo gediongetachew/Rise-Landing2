@@ -96,8 +96,8 @@ export default function GetInTouch() {
       container
       spacing={2}
       paddingY={{ xs: 2, md: 15 }}
-      marginTop={{ xs: 7, sm: 10,xl:2 }}
-      sx={{ paddingX: { xs: 2, sm: 4, md: 10 },}}
+      marginTop={{ xs: 7, sm: 10, xl: 2 }}
+      sx={{ paddingX: { xs: 2, sm: 4, md: 10 } }}
     >
       {/* Contact Image */}
       <Grid item xs={12}>
@@ -147,15 +147,17 @@ export default function GetInTouch() {
             sx={{
               color: "#00000",
               mb: 3,
-              fontSize: { xs: "30px", md: "65px" },
+              fontSize: { xs: "20px", md: "48px" },
               fontWeight: "bold",
             }}
           >
-            Lorem ipsum dolor sit amet consectetur.
+            Questions? We're here to help! Contact us below, and we'll respond
+            promptly.
           </Typography>
           <Typography variant="subtitle1" sx={{ color: "#616161", mb: 7 }}>
-            Rhoncus gravida consequat feugiat consectetur. Adipiscing arcu sit
-            auctor hac ornare tempus.
+            Have questions or need assistance? We're here to help! Reach out to
+            us through the contact options below, and we'll get back to you as
+            soon as possible.
           </Typography>
 
           <Grid
@@ -191,8 +193,7 @@ export default function GetInTouch() {
                 fontFamily: "Roboto",
               }}
             >
-              Lorem ipsum dolor sit amet consectetur. Rhoncus gravida consequat
-              feugiat consectetur.{" "}
+              we'll get back to you as soon as possible!
             </Typography>
 
             <form onSubmit={handleSubmit} style={{ marginTop: 40 }}>
@@ -311,7 +312,7 @@ export default function GetInTouch() {
                     fontSize: { xs: 20, sm: 25 },
                   }}
                 >
-                  Call Center
+                  Call
                 </Typography>
                 <Typography
                   sx={{
@@ -320,16 +321,7 @@ export default function GetInTouch() {
                     fontSize: { xs: 13, md: 18 },
                   }}
                 >
-                  +25190001100
-                </Typography>
-                <Typography
-                  sx={{
-                    color: "#616161",
-                    fontFamily: "Helvetica Light",
-                    fontSize: { xs: 13, md: 18 },
-                  }}
-                >
-                  +25190001100
+                  +49(0)221650804184
                 </Typography>
               </Box>
               <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
@@ -382,7 +374,7 @@ export default function GetInTouch() {
                     fontSize: { xs: 13, md: 18 },
                   }}
                 >
-                  Contact@Rise.com
+                 info@risegmbh.de 
                 </Typography>
                 <Typography
                   sx={{
@@ -455,8 +447,7 @@ export default function GetInTouch() {
               fontFamily: "Roboto",
             }}
           >
-            Lorem ipsum dolor sit amet consectetur. Rhoncus gravida consequat
-            feugiat consectetur.{" "}
+           we'll get back to you as soon as possible!
           </Typography>
 
           <form onSubmit={handleSubmit} style={{ marginTop: 40 }}>

@@ -36,9 +36,7 @@ export default function Footer() {
           RISE GLOBAL GMBA
         </Typography>
         <Typography variant="h6" sx={{ color: "#FFFFFFBF", mt: 1, fontSize: {xs:10, sm:15, md:20}}}>
-          Lorem ipsum dolor sit amet consectetur. Rhoncus gravida consequat
-          feugiat consectetur. Adipiscing arcu sit auctor hac ornare tempus.
-          Quis praesent.
+        We specialise in importing medical products to Africa and exporting organic treasures like coffee and spices globally.
         </Typography>
       </Grid>
 
@@ -59,7 +57,7 @@ export default function Footer() {
           Industry
         </Typography>
         <Typography variant="body2">AgriTech businesses</Typography>
-        <Typography variant="body2">Cafe</Typography>
+        <Typography variant="body2">Cafe’</Typography>
         <Typography variant="body2">Import and Exports</Typography>
       </Grid>
 
@@ -77,11 +75,12 @@ export default function Footer() {
         }}
       >
         <Typography variant="body1" fontWeight="bold" color='#FFFFFFBF'>
-          Industry
+          Products
         </Typography>
-        <Typography variant="body2">AgriTech businesses</Typography>
-        <Typography variant="body2">Cafe</Typography>
-        <Typography variant="body2">Import and Exports</Typography>
+        <Typography variant="body2">Surgical Equipment's</Typography>
+        <Typography variant="body2">Hospital Furniture's</Typography>
+        <Typography variant="body2">Laboratory Products</Typography>
+       
       </Grid>
 
       <Grid
@@ -141,11 +140,11 @@ export default function Footer() {
         }}
       >
         <Typography variant="body1" fontWeight="bold" color='#FFFFFFBF'>
-          Contact
+          Contact Us
         </Typography>
-        <Typography variant="body2">+251-900-111100</Typography>
-        <Typography variant="body2">Contact@rise.com</Typography>
-        <Typography variant="body2">Help@rise.com</Typography>
+        <Typography variant="body2">+49(0)221650804184</Typography>
+        <Typography variant="body2">info@risegmbh.de</Typography>
+        
       </Grid>
 
       <Grid
@@ -188,6 +187,9 @@ export default function Footer() {
                 Company
               </Typography>
             </Link>
+          </Typography>
+          <Typography variant="body2">
+            Powered By Droga Consulting Services
           </Typography>
           <Box display="flex" gap={2}>
             <Typography variant="body2">All Rights Reserved</Typography>

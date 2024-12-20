@@ -20,21 +20,17 @@ export default function Hero() {
         // Prevent any overflow issues with responsive image
       }}
     >
-      <Grid item xs={12} sx={{ mt: { xs: 2, md: 5 } }}>
+      <Grid item xs={12} sx={{mt: { xs: 2, md: 5 } }}>
         <Typography
           variant="h2"
           fontWeight="bold"
           lineHeight="normal"
           textAlign="left"
           sx={{
-            fontSize: { xs: "1.3rem", sm: "2rem", md: "2.5rem", lg: "3rem" },
+            fontSize: { xs: "1.3rem", sm: "2rem", md: "2.5rem", lg: "3rem" },width:{xs:"100%", md:"60%"}
           }}
         >
-          Lorem ipsum dolor sit amet consectetur.
-         
-          Non donec erat fermentum donaslast m ultrices lobortis enim.
-        
-          Ac blandit semper ornare congue. At.
+          We are a group of young and energetic professionals.
         </Typography>
       </Grid>
 

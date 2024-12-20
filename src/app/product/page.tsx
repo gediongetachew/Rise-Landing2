@@ -11,7 +11,7 @@ export default function Products() {
       <Hero />
       <Quality />
       <Menu />
-      <Banner />
+     
       <Grid
         sx={{
           borderTop: "solid 2px #9E9E9E",

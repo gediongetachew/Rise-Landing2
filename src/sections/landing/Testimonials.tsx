@@ -85,7 +85,7 @@ export default function TestimonialCard() {
               key={index}
               sx={{
                 height: "auto",
-                minHeight: "400px",
+                minHeight: {xs:"0px", md:"400px"},
                 width: { xs: "100%", sm: "360px", md: "360px" },
                 flexShrink: 0,
                 backgroundColor: "white",
