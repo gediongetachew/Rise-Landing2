@@ -12,7 +12,7 @@ export default function TestimonialCard() {
 
   const nextTestimonial = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 2) % testimonials.length);
-    if (page === 5) {
+    if (page === testimonials.length) {
       setPage(1);
     } else setPage(page + 1);
   };
@@ -282,12 +282,12 @@ export default function TestimonialCard() {
             fontWeight: "bold",
           }}
         >
-          {page}/5
+          {page}/{testimonials.length}
         </Typography>
 
         <Button
           onClick={nextTestimonial}
-          disabled={page === 5} // Disable if on the last page
+          disabled={page === testimonials.length} // Disable if on the last page
           sx={{
             width: { xs: "40px", md: "60px" },
             height: { xs: "39px", md: "50px" },
@@ -303,8 +303,8 @@ export default function TestimonialCard() {
         >
           <ChevronRight
             sx={{
-              color: page === 5 ? "#D3D3D3" : "black",
-              "&:hover": { color: page === 5 ? "#D3D3D3" : "#9E9E9E" },
+              color: page === testimonials.length ? "#D3D3D3" : "black",
+              "&:hover": { color: page === testimonials.length ? "#D3D3D3" : "#9E9E9E" },
             }}
           />
         </Button>
