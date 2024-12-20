@@ -16,6 +16,7 @@ export default function Products() {
         sx={{
           borderTop: "solid 2px #9E9E9E",
           borderBottom: "solid 2px #9E9E9E",
+          marginTop:10
         }}
       >
         <ImageCarousel name="" direction="forward" bgcolor={false} />
