@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <ImageCarousel name="Our Brands" direction="forward" bgcolor={false} />
+      <ImageCarousel name="Our Brands" direction="forward" bgcolor={true} />
       <Aboutus />
       <Banner />
       <Sectors/>
