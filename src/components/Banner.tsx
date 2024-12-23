@@ -73,7 +73,8 @@ export default function Banner() {
                   xl: "3.5rem",
                 },
               
-                fontWeight: 'bold'
+                fontWeight: 'bold',
+                 fontFamily: "Helevetica"
               }}
             >
               +10
@@ -89,6 +90,7 @@ export default function Banner() {
                   lg: "1.3rem",
                   xl: "1.8rem",
                 },
+                 fontFamily: "Helevetica"
               }}
             >
             Employees
@@ -108,7 +110,8 @@ export default function Banner() {
                   lg: "2.8rem",
                   xl: "3.5rem",
                 },
-                fontWeight: 'bold'
+                fontWeight: 'bold',
+                 fontFamily: "Helevetica"
               }}
             >
               +20
@@ -124,6 +127,7 @@ export default function Banner() {
                   lg: "1.3rem",
                   xl: "1.8rem",
                 },
+                 fontFamily: "Helevetica"
               }}
             >
              Products
@@ -143,7 +147,8 @@ export default function Banner() {
                   lg: "2.8rem",
                   xl: "3.5rem",
                 },
-                fontWeight: 'bold'
+                fontWeight: 'bold',
+                 fontFamily: "Helevetica"
               }}
             >
               +30
@@ -159,6 +164,7 @@ export default function Banner() {
                   lg: "1.3rem",
                   xl: "1.8rem",
                 },
+                 fontFamily: "Helevetica"
               }}
             >
              Loyal Customers
@@ -178,7 +184,8 @@ export default function Banner() {
                   lg: "2.8rem",
                   xl: "3.5rem",
                 },
-                fontWeight: 'bold'
+                fontWeight: 'bold',
+                 fontFamily: "Helevetica"
               }}
             >
               +10
@@ -194,6 +201,7 @@ export default function Banner() {
                   lg: "1.3rem",
                   xl: "1.8rem",
                 },
+                fontFamily: "Helevetica"
               }}
             >
              Years Of Experience
@@ -235,10 +243,10 @@ export default function Banner() {
             alignItems="flex-center"
             justifyItems="flex-center"
             sx={{
-              fontSize: { xs: ".8rem", sm: "1rem", md: "1.4rem", lg: "30px" }, fontWeight:400, fontFamily:"Helvatic Light"
+              fontSize: { xs: ".8rem", sm: "1rem", md: "1.4rem", lg: "30px" }, fontFamily: "Helvetica"
             }}
           >
-            Happy Customer
+            Happy Customer = Happy Day
           </Typography>
 
           <Typography
@@ -246,7 +254,7 @@ export default function Banner() {
             component="h2"
             color="white"
             gutterBottom
-            sx={{ fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.5rem", xl: '40px', fontWeight: 'bold' }, fontfamily:"Helvatic" }}
+            sx={{ fontSize: { xs: ".8rem", sm: "1.1rem", md: "1.5rem", xl: '40px', fontWeight: 'bold' }, fontfamily:"Helvetica" }}
           >
             Over 10 years of expertise, delivering quality to our global customers.
           </Typography>

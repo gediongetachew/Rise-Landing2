@@ -92,8 +92,8 @@ export default function Footer() {
         <Typography variant="body1" fontWeight="bold" color="#FFFFFFBF">
           Products
         </Typography>
-        <Typography variant="body2">Surgical Equipment\'s</Typography>
-        <Typography variant="body2">Hospital Furniture\'s</Typography>
+        <Typography variant="body2">Surgical Equipment's</Typography>
+        <Typography variant="body2">Hospital Furniture's</Typography>
         <Typography variant="body2">Laboratory Products</Typography>
       </Grid>
 

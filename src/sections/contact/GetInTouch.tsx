@@ -127,7 +127,7 @@ export default function GetInTouch() {
       </Grid>
 
       {/* Contact Information and Form */}
-      <Grid container spacing={8} padding={{ xs: 2, md: 5 }}>
+      <Grid container spacing={8} padding={{ xs: 2, md: 5 }} sx={{ display:"flex", justifyContent:"space-between"}}>
         {/* Contact Info Section */}
         <Grid
           item
@@ -151,12 +151,12 @@ export default function GetInTouch() {
               fontWeight: "bold",
             }}
           >
-            Questions? We/'re here to help! Contact us below, and we/'ll respond
+            Questions? We're here to help! Contact us below, and we'll respond
             promptly.
           </Typography>
           <Typography variant="subtitle1" sx={{ color: "#616161", mb: 7 }}>
-            Have questions or need assistance? We/'re here to help! Reach out to
-            us through the contact options below, and we/'ll get back to you as
+            Have questions or need assistance? We're here to help! Reach out to
+            us through the contact options below, and we'll get back to you as
             soon as possible.
           </Typography>
 
@@ -193,7 +193,7 @@ export default function GetInTouch() {
                 fontFamily: "Roboto",
               }}
             >
-              we/'ll get back to you as soon as possible!
+              we'll get back to you as soon as possible!
             </Typography>
 
             <form onSubmit={handleSubmit} style={{ marginTop: 40 }}>
@@ -417,7 +417,7 @@ export default function GetInTouch() {
         <Grid
           item
           xs={12}
-          md={6}
+          md={5.5}
           sx={{
             display: { xs: "none", sm: "none", md: "flex" },
             background: "#F7F7F7",
@@ -428,6 +428,7 @@ export default function GetInTouch() {
             paddingLeft: "40px",
             paddingRight: "40px",
             borderRadius: "20px",
+            
           }}
         >
           <Typography
@@ -447,7 +448,7 @@ export default function GetInTouch() {
               fontFamily: "Roboto",
             }}
           >
-            we/'ll get back to you as soon as possible!
+            we'll get back to you as soon as possible!
           </Typography>
 
           <form onSubmit={handleSubmit} style={{ marginTop: 40 }}>

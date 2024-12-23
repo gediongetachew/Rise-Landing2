@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -59,7 +59,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: "Helvetica", "Helvetica-light", "Roboto", Arial, sans-serif;
 }
 
 @layer utilities {
@@ -85,4 +85,20 @@ body {
 
 .poster-active iframe {
   opacity: 1;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: local("Helvetica"), local("HelveticaNeue"),
+    url("/public/fonts/Helvetica.tff") format("tff"); /* Adjust the path */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica-Light";
+  src: local("Helvetica"), local("HelveticaNeue"),
+    url("/public/fonts/Helvetica-Light.tff") format("tff"); /* Adjust the path */
+  font-weight: normal;
+  font-style: normal;
 }

@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/swiper-bundle.css";
 
-import cards from "@/data/brandCards";
+import { cards, cards2 } from '../data/brandCards';
 import Image from "next/image";
 import Link from "next/link";
 import Grid from "@mui/material/Grid";
@@ -19,6 +19,7 @@ interface Props {
 }
 
 export default function ImageCarousel({ name, direction, bgcolor }: Props) {
+  const Cards = bgcolor ? cards2: cards
   return (
     <Grid container>
       {name && (
@@ -74,7 +75,7 @@ export default function ImageCarousel({ name, direction, bgcolor }: Props) {
             modules={[Autoplay]}
             className="mySwiper"
           >
-            {cards.map((image) => (
+            {Cards.map((image) => (
               <SwiperSlide key={image.id} style={{ height: "100%" }}>
                 <Link href={`/${image.title}`} passHref>
                   <Box

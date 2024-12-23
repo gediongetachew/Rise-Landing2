@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <ImageCarousel name="Our Brands" direction="forward" bgcolor={true} />
+      <ImageCarousel name="Our Brands" direction="forward" bgcolor={false} />
       <Aboutus />
       <Banner />
       <Sectors/>
@@ -21,8 +21,8 @@ export default function Home() {
           borderBottom: "solid 2px #9E9E9E",
         }}
       >
-        <ImageCarousel name="" direction="forward" bgcolor={false}  />
-        <ImageCarousel name="" direction="backward" bgcolor={false} />
+        <ImageCarousel name="" direction="forward" bgcolor={true}  />
+        <ImageCarousel name="" direction="backward" bgcolor={true} />
       </Grid>
     </div>
   );
