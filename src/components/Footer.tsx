@@ -16,7 +16,7 @@ export default function Footer() {
         pt: 5,
         paddingX: { xs: 2, sm: 4, md: 10 },
         pb: 2,
-        height: {xs:'900px', sm:'800px', md: '700px', lg:'650px'}
+        height: { xs: "900px", sm: "800px", md: "700px", lg: "650px" },
       }}
     >
       <Grid
@@ -32,11 +32,26 @@ export default function Footer() {
           mb: { xs: 4, md: 0 },
         }}
       >
-        <Typography variant="h3" fontWeight="bold" sx={{ color: "#EE484A", fontSize: {xs:30, sm:40,md:40,lg:42} }}>
+        <Typography
+          variant="h3"
+          fontWeight="bold"
+          sx={{
+            color: "#EE484A",
+            fontSize: { xs: 30, sm: 40, md: 40, lg: 42 },
+          }}
+        >
           RISE GLOBAL GMBA
         </Typography>
-        <Typography variant="h6" sx={{ color: "#FFFFFFBF", mt: 1, fontSize: {xs:10, sm:15, md:20}}}>
-        We specialise in importing medical products to Africa and exporting organic treasures like coffee and spices globally.
+        <Typography
+          variant="h6"
+          sx={{
+            color: "#FFFFFFBF",
+            mt: 1,
+            fontSize: { xs: 10, sm: 15, md: 20 },
+          }}
+        >
+          We specialise in importing medical products to Africa and exporting
+          organic treasures like coffee and spices globally.
         </Typography>
       </Grid>
 
@@ -53,7 +68,7 @@ export default function Footer() {
           textAlign: "left",
         }}
       >
-        <Typography variant="body1" fontWeight="bold" color='#FFFFFFBF'>
+        <Typography variant="body1" fontWeight="bold" color="#FFFFFFBF">
           Industry
         </Typography>
         <Typography variant="body2">AgriTech businesses</Typography>
@@ -74,13 +89,12 @@ export default function Footer() {
           textAlign: "left",
         }}
       >
-        <Typography variant="body1" fontWeight="bold" color='#FFFFFFBF'>
+        <Typography variant="body1" fontWeight="bold" color="#FFFFFFBF">
           Products
         </Typography>
-        <Typography variant="body2">Surgical Equipment's</Typography>
-        <Typography variant="body2">Hospital Furniture's</Typography>
+        <Typography variant="body2">Surgical Equipment\'s</Typography>
+        <Typography variant="body2">Hospital Furniture\'s</Typography>
         <Typography variant="body2">Laboratory Products</Typography>
-       
       </Grid>
 
       <Grid
@@ -96,7 +110,7 @@ export default function Footer() {
           textAlign: "left",
         }}
       >
-        <Typography variant="body1" fontWeight="bold" color='#FFFFFFBF'>
+        <Typography variant="body1" fontWeight="bold" color="#FFFFFFBF">
           Company
         </Typography>
         <Link href="/Home" passHref>
@@ -139,12 +153,11 @@ export default function Footer() {
           textAlign: "left",
         }}
       >
-        <Typography variant="body1" fontWeight="bold" color='#FFFFFFBF'>
+        <Typography variant="body1" fontWeight="bold" color="#FFFFFFBF">
           Contact Us
         </Typography>
         <Typography variant="body2">+49(0)221650804184</Typography>
         <Typography variant="body2">info@risegmbh.de</Typography>
-        
       </Grid>
 
       <Grid

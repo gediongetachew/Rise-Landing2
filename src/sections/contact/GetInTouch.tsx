@@ -151,12 +151,12 @@ export default function GetInTouch() {
               fontWeight: "bold",
             }}
           >
-            Questions? We're here to help! Contact us below, and we'll respond
+            Questions? We/'re here to help! Contact us below, and we/'ll respond
             promptly.
           </Typography>
           <Typography variant="subtitle1" sx={{ color: "#616161", mb: 7 }}>
-            Have questions or need assistance? We're here to help! Reach out to
-            us through the contact options below, and we'll get back to you as
+            Have questions or need assistance? We/'re here to help! Reach out to
+            us through the contact options below, and we/'ll get back to you as
             soon as possible.
           </Typography>
 
@@ -193,7 +193,7 @@ export default function GetInTouch() {
                 fontFamily: "Roboto",
               }}
             >
-              we'll get back to you as soon as possible!
+              we/'ll get back to you as soon as possible!
             </Typography>
 
             <form onSubmit={handleSubmit} style={{ marginTop: 40 }}>
@@ -374,7 +374,7 @@ export default function GetInTouch() {
                     fontSize: { xs: 13, md: 18 },
                   }}
                 >
-                 info@risegmbh.de 
+                  info@risegmbh.de
                 </Typography>
                 <Typography
                   sx={{
@@ -447,7 +447,7 @@ export default function GetInTouch() {
               fontFamily: "Roboto",
             }}
           >
-           we'll get back to you as soon as possible!
+            we/'ll get back to you as soon as possible!
           </Typography>
 
           <form onSubmit={handleSubmit} style={{ marginTop: 40 }}>

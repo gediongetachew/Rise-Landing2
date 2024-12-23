@@ -1,7 +1,4 @@
-import product1 from "../../public/assets/stetoscop.png";
-import product2 from "../../public/assets/product2.jpg";
-import product3 from "../../public/assets/product2.jpg";
-import product4 from "../../public/assets/product4.jpg";
+
 
 const Record = [
   {

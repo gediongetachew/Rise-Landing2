@@ -1,8 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import PlayArrowIcon from "@mui/icons-material/PlayArrow";
-import brokenArrow from "../../../public/assets/borokenArrow.svg";
-import { Typography } from "@mui/material";
 
 interface InvertedBorderProps {
   name?: string;
@@ -20,19 +17,6 @@ const InvertedBorder: React.FC<InvertedBorderProps> = ({
   image,
 }) => {
   const [playVideo, setPlayVideo] = useState(false);
-
-  const posterImage: string = (() => {
-    switch (name) {
-      case "somalia":
-        return "/somaliLand.png";
-      case "rwanda":
-        return "/rwanda.png";
-      case "aboutus":
-        return "/aboutus.png";
-      default:
-        return "/aboutus.png";
-    }
-  })();
 
   const handlePlayVideo = (): void => {
     setPlayVideo(true);
@@ -407,13 +391,10 @@ const InvertedBorder: React.FC<InvertedBorderProps> = ({
                       style={{
                         width: "24px",
                         height: "24px",
-                        
                       }}
                     />
 
-                
-                      {buttonText || "Visit Catalog"}
-                  
+                    {buttonText || "Visit Catalog"}
                   </a>
                 </div>
               </div>
